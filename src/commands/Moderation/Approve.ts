@@ -1,10 +1,10 @@
 import Command from "../../command/Command";
-import type { CommandInteraction } from "discord.js";
+import { CommandInteraction, PermissionFlagsBits } from "discord.js";
 import type { BotClient } from "../../BotClient";
 
 export default class Autiomation extends Command {
     public constructor() {
-        super("approve", "Approve a user into the server", [], ["MANAGE_ROLES"]);
+        super("approve", "Approve a user into the server", undefined, PermissionFlagsBits.ManageRoles);
 
         this.data.addUserOption(option =>
             option.setName("user")

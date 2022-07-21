@@ -1,11 +1,11 @@
 import Command from "../../command/Command";
-import { CommandInteraction, MessageEmbed } from "discord.js";
+import { CommandInteraction, EmbedBuilder, PermissionFlagsBits } from "discord.js";
 import type { BotClient } from "../../BotClient";
 import type { Guild } from "../../models/Guild";
 
 export default class Autiomation extends Command {
     public constructor() {
-        super("list", "List all settings for current guild", [], ["ADMINISTRATOR"]);
+        super("list", "List all settings for current guild", undefined, PermissionFlagsBits.Administrator);
     }
 
     async execute(interaction: CommandInteraction, client: BotClient): Promise<void> {
@@ -19,14 +19,14 @@ export default class Autiomation extends Command {
             return;
         }
 
-        const embed = new MessageEmbed()
+        const embed = new EmbedBuilder()
             .setTitle("The current settings for this server:")
-            .addField("Member role", await displayData(interaction, client, guild, "member"), true)
-            .addField("Unverified role", await displayData(interaction, client, guild, "unverified"), true)
-            .addField("Welcome channel", await displayData(interaction, client, guild, "welcomechannel"), true)
-            .addField("Welcome message", await displayData(interaction, client, guild, "welcomemessage"), true)
-            .addField("Welcome notification", await displayData(interaction, client, guild, "welcomenotification"), true)
-            .addField("Auto-add unverified", await displayData(interaction, client, guild, "autoaddunverified"), true)
+            .addFields("Member role", await displayData(interaction, client, guild, "member"), true)
+            .addFields("Unverified role", await displayData(interaction, client, guild, "unverified"), true)
+            .addFields("Welcome channel", await displayData(interaction, client, guild, "welcomechannel"), true)
+            .addFields("Welcome message", await displayData(interaction, client, guild, "welcomemessage"), true)
+            .addFields("Welcome notification", await displayData(interaction, client, guild, "welcomenotification"), true)
+            .addFields("Auto-add unverified", await displayData(interaction, client, guild, "autoaddunverified"), true)
         interaction.reply({ embeds: [embed] });
     }
 }

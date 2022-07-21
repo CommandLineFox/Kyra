@@ -1,7 +1,7 @@
 {
-  "name": "pokelust",
+  "name": "kyra",
   "version": "1.0.0",
-  "description": "Utility bot for pokelust",
+  "description": "Verification bot by Alex",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,21 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CommandLineFox/Pokelust.git"
+    "url": "git+https://github.com/CommandLineFox/Kyra.git"
   },
   "author": "CommandLineFox",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CommandLineFox/Pokelust/issues"
+    "url": "https://github.com/CommandLineFox/Kyra/issues"
   },
-  "homepage": "https://github.com/CommandLineFox/Pokelust#readme",
+  "homepage": "https://github.com/CommandLineFox/Kyra#readme",
   "dependencies": {
-    "@discordjs/builders": "^0.15.0",
-    "@discordjs/rest": "^0.5.0",
-    "discord-api-types": "^0.34.0",
-    "discord.js": "^13.8.0",
-    "moment": "^2.29.3",
-    "mongodb": "^4.7.0",
-    "typescript": "^4.7.3"
+    "@discordjs/rest": "^1.0.0",
+    "discord-api-types": "^0.36.2",
+    "discord.js": "^14.0.3",
+    "moment": "^2.29.4",
+    "mongodb": "^4.8.0",
+    "typescript": "^4.7.4"
   }
 }
