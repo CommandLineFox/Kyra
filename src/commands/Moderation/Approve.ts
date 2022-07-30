@@ -4,7 +4,7 @@ import type { BotClient } from "../../BotClient";
 
 export default class Autiomation extends Command {
     public constructor() {
-        super("approve", "Approve a user into the server", undefined, PermissionFlagsBits.ManageRoles);
+        super("approve", "Approve a user into the server", undefined, PermissionFlagsBits.KickMembers);
 
         this.data.addUserOption(option =>
             option.setName("user")
