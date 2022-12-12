@@ -1,5 +1,5 @@
 {
-  "name": "kyra",
+  "name": "kaaz",
   "version": "1.0.0",
   "description": "Verification bot by Alex",
   "main": "dist/index.js",
@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/CommandLineFox/Kyra#readme",
   "dependencies": {
-    "@discordjs/rest": "^1.0.0",
-    "discord-api-types": "^0.36.2",
-    "discord.js": "^14.0.3",
+    "@discordjs/rest": "^1.4.0",
+    "discord-api-types": "^0.37.22",
+    "discord.js": "^14.7.1",
     "moment": "^2.29.4",
-    "mongodb": "^4.8.0",
-    "typescript": "^4.7.4"
+    "mongodb": "^4.12.1",
+    "typescript": "^4.9.4"
   }
 }

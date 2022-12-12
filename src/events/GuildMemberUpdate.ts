@@ -31,7 +31,7 @@ function welcome(client: BotClient, guild: Guild, oldMember: GuildMember, newMem
         return;
     }
 
-    let condition = newMember.roles.cache.has(member.id) && !oldMember.roles.cache.has(member.id);
+    let condition = false;
     if (guild.config.roles?.unverified) {
         const unverified = newMember.guild.roles.cache.get(guild.config.roles.unverified);
         if (unverified) {
