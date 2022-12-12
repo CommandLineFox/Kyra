@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CommandLineFox/Kyra.git"
+    "url": "git+https://github.com/CommandLineFox/VerificationBot.git"
   },
   "author": "CommandLineFox",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CommandLineFox/Kyra/issues"
+    "url": "https://github.com/CommandLineFox/VerificationBot/issues"
   },
-  "homepage": "https://github.com/CommandLineFox/Kyra#readme",
+  "homepage": "https://github.com/CommandLineFox/VerificationBot#readme",
   "dependencies": {
     "@discordjs/rest": "^1.4.0",
     "discord-api-types": "^0.37.22",
